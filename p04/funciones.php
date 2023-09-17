@@ -42,6 +42,21 @@ function cicloWhile($numero){
     }
 }
 
+function cicloDoWhile($numero){
+    $rand_number = 1;
+    if($_GET['numero'] > 9999 or $_GET['numero'] < 1){
+        return "Numero fuera de rango, por favor uilice numeros entre 1 y 9999";
+    }
+    do{
+        $rand_number = rand(1, 9999);
+        if($rand_number % $_GET['numero'] == 0){
+            return "Para el numero ".$_GET['numero'] . " el primer multiplo aleatorio encontrado es ".$rand_number;
+            break;
+        }
+    }
+    while($rand_number % $_GET['numero'] != 0);
+}
+
 
 
 ?>

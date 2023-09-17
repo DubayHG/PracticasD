@@ -57,6 +57,16 @@
                 echo 'No existen parametros en la URL';
             }
             ?>
+    </br>
+        <strong>Ciclo Do While R:</strong>
+            <?php
+            if (!empty($_GET['numero'])) {
+                $numero = $_GET['numero'];
+                echo cicloDoWhile($numero);
+            } else {
+                echo 'No existen parametros en la URL';
+            }
+            ?>
         </p>
     </div>
 </body>
