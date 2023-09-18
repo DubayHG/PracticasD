@@ -57,6 +57,13 @@ function cicloDoWhile($numero){
     while($rand_number % $_GET['numero'] != 0);
 }
 
+function codeAscii(){
+    for($x=97;$x<123;$x++){
+        $r[$x]=chr($x);
+        }
+    return $r;     
+}
+
 
 
 ?>
